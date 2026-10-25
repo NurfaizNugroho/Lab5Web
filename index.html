@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript</title>
+</head>
+
+<body>
+    <h1>Eksperimen Mandiri JavaScript</h1>
+
+    <!-- ===================== EKSPERIMEN 1 ===================== -->
+    <section>
+        <h3>1. Operasi Dasar dengan Prompt</h3>
+        <button type="button" onclick="operasiDasarPrompt()">Hitung dari Prompt</button>
+        <p id="hasilOperasi"></p>
+    </section>
+
+    <hr>
+
+    <!-- ===================== EKSPERIMEN 7 ===================== -->
+    <section>
+        <h3>7. Tabel Perkalian 7 sampai 10</h3>
+        <button type="button" onclick="tampilTabelPerkalian()">Tampilkan Tabel</button>
+        <div id="hasilPerkalian"></div>
+    </section>
+
+    <hr>
+
+    <!-- ===================== EKSPERIMEN 8 ===================== -->
+    <section>
+        <h3>8. Function cekGenap(angka)</h3>
+        <label for="angkaGenap">Masukkan bilangan bulat:</label>
+        <input type="number" id="angkaGenap" step="1">
+        <button type="button" onclick="periksaGenap()">Periksa</button>
+        <p id="hasilGenap"></p>
+    </section>
+
+    <hr>
+
+    <!-- ===================== EKSPERIMEN 9 ===================== -->
+    <section>
+        <h3>9. Validasi Form</h3>
+        <form id="formBiodata" novalidate>
+            <p>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama">
+                <span id="errNama" style="color:red;"></span>
+            </p>
+            <p>
+                <label for="nim">NIM:</label>
+                <input type="text" id="nim">
+                <span id="errNim" style="color:red;"></span>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email">
+                <span id="errEmail" style="color:red;"></span>
+            </p>
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="hasilForm"></p>
+    </section>
+
+    <hr>
+
+    <!-- ===================== EKSPERIMEN 10 ===================== -->
+    <section>
+        <h3>10. Daftar Menu Makanan</h3>
+        <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
+        <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
+        <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
+        <label><input type="checkbox" class="menu" value="4000"> Nasi Putih — Rp4.000</label><br>
+        <label><input type="checkbox" class="menu" value="3000"> Es Teh Manis — Rp3.000</label><br>
+        <label><input type="checkbox" class="menu" value="2000"> Sayur Asem — Rp2.000</label><br>
+        <p>Total: Rp<span id="total">0</span></p>
+    </section>
+
+    <hr>
+
+    <!-- ===================== EKSPERIMEN 11 ===================== -->
+    <section>
+        <h3>11. Sembunyikan / Tampilkan Elemen</h3>
+        <button type="button" id="tombolToggle" onclick="toggleElemen()">Sembunyikan Teks</button>
+        <p id="teksToggle">Teks ini bisa disembunyikan dan ditampilkan kembali.</p>
+    </section>
+
+    <script src="script.js"></script>
+    <section>
+        <h1>Pengenalan JavaScript</h1>
+        <p id="pesan">Konten awal.</p>
+    </section>
+
+    <section>
+        <label for="bilangan">Masukkan bilangan bulat:</label>
+        <input type="number" id="bilangan" step="1">
+        <button type="button" onclick="cekBilangan()">Periksa</button>
+        <p id="hasilBilangan"></p>
+    </section>
+
+    <section>
+        <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+        <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
+        <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+    </section>
+
+    <section>
+        <hr>
+        <h3>Kalkulator Nilai Mahasiswa</h3>
+
+        <!-- Form Input -->
+        <label for="tugas">Nilai Tugas (0-100):</label><br>
+        <input type="number" id="tugas" min="0" max="100"><br><br>
+
+        <label for="uts">Nilai UTS (0-100):</label><br>
+        <input type="number" id="uts" min="0" max="100"><br><br>
+
+        <label for="uas">Nilai UAS (0-100):</label><br>
+        <input type="number" id="uas" min="0" max="100"><br><br>
+
+        <button type="button" onclick="prosesHitungNilai()">Hitung Nilai</button>
+
+        <!-- Tempat menampilkan hasil di halaman HTML -->
+        <div id="hasilKalkulator" style="margin-top: 15px; font-weight: bold;"></div>
+    </section>
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
